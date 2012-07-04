@@ -1,12 +1,5 @@
 # Yii Sortable Model
 
-* Overview
-* Requirements
-* Setup
-* Class Reference
-* Resources
-* License
-
 ## Overview
 Yii Sortable Model is a Yii extension that provides with a set of tools to help keeping records of a model manually sorted. Each of these tools can be used alone. Specifically, it provides with:
 
