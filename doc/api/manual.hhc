@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta name="GENERATOR" content="yiidoc http://www.yiiframework.com">
+</head>
+<body>
+<object type="text/site properties">
+<param name="Window Styles" value="0x800025">
+<param name="FrameName" value="right">
+<param name="ImageType" value="Folder">
+<param name="comment" value="title:Online Help">
+<param name="comment" value="base:index.html">
+</object>
+
+<ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="All Packages">
+		<param name="Local" value="index.html">
+		</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Yii Sortable Model">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AjaxSortingAction">
+			<param name="Local" value="AjaxSortingAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SortableCActiveRecord">
+			<param name="Local" value="SortableCActiveRecord.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SortableCGridView">
+			<param name="Local" value="SortableCGridView.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SortableCListView">
+			<param name="Local" value="SortableCListView.html">
+			</object>
+		</ul>
+</ul>
+</body>
+</html>

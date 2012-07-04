@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>Yii Sortable Model Class Reference</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+<a href="http://www.yiiframework.com/extension/yiisortablemodel/">Yii Sortable Model</a> Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>Class Reference</h1>
+
+<table class="summaryTable docIndex">
+<colgroup>
+	<col class="col-package" />
+	<col class="col-class" />
+	<col class="col-description" />
+</colgroup>
+<tr>
+  <th>Package</th><th>Class</th><th>Description</th>
+</tr>
+<tr>
+  <td rowspan="4"><a name="Yii Sortable Model"></a>Yii Sortable Model</td>
+  <td><a href="AjaxSortingAction.html">AjaxSortingAction</a></td>
+  <td>This action is triggered by SortableCGridView widget to store in the background the new records order.</td>
+</tr>
+<tr>
+  <td><a href="SortableCActiveRecord.html">SortableCActiveRecord</a></td>
+  <td>Models extending this class will automatically keep its records order consistent when items are added or deleted.</td>
+</tr>
+<tr>
+  <td><a href="SortableCGridView.html">SortableCGridView</a></td>
+  <td>CGridView widget extended to allow drag and drop sorting of records. With it, users will be able to drag and drop with the mouse the rows of the grid to change records order. New order will be automatically saved in the database through an Ajax call.</td>
+</tr>
+<tr>
+  <td><a href="SortableCListView.html">SortableCListView</a></td>
+  <td>CListView widget extended to list records sorted.</td>
+</tr>
+</table>
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

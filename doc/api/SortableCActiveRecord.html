@@ -1,0 +1,1105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>SortableCActiveRecord</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+<a href="http://www.yiiframework.com/extension/yiisortablemodel/">Yii Sortable Model</a> Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>SortableCActiveRecord</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+| <a href="#events">Events</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#Yii Sortable Model">Yii Sortable Model</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class SortableCActiveRecord &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>Implements</th>
+  <td>IteratorAggregate, Traversable, ArrayAccess</td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>1.0</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td><a class="sourceLink" href="https://github.com/laMarciana/yiiSortableModel/blob/master/models/SortableCActiveRecord.php">extensions//models/SortableCActiveRecord.php</a></td>
+</tr>
+</table>
+
+<div id="classDescription">
+Models extending this class will automatically keep its records order consistent when items are added or deleted.</div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="attributes">
+  <td>attributes</td>
+  <td>array</td>
+  <td>Returns all column attribute values.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="commandBuilder">
+  <td>commandBuilder</td>
+  <td>CDbCommandBuilder</td>
+  <td>Returns the command builder used by this AR.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="db">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#db-detail">db</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CDbConnection">CDbConnection</a></td>
+  <td>the default database connection for all active record classes.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="dbConnection">
+  <td>dbConnection</td>
+  <td>CDbConnection</td>
+  <td>Returns the database connection used by active record.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="dbCriteria">
+  <td>dbCriteria</td>
+  <td>CDbCriteria</td>
+  <td>Returns the query criteria associated with this model.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="errors">
+  <td>errors</td>
+  <td>array</td>
+  <td>Returns the errors for all attribute or a single attribute.</td>
+  <td>CModel</td>
+</tr>
+<tr class="inherited" id="isNewRecord">
+  <td>isNewRecord</td>
+  <td>boolean</td>
+  <td>Returns if the current record is new.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="iterator">
+  <td>iterator</td>
+  <td>CMapIterator</td>
+  <td>Returns an iterator for traversing the attributes in the model.</td>
+  <td>CModel</td>
+</tr>
+<tr class="inherited" id="metaData">
+  <td>metaData</td>
+  <td>CActiveRecordMetaData</td>
+  <td>Returns the meta-data for this AR</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="oldPrimaryKey">
+  <td>oldPrimaryKey</td>
+  <td>mixed</td>
+  <td>Returns the old primary key value.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr id="orderField">
+  <td><a href="SortableCActiveRecord.html#orderField-detail">orderField</a></td>
+  <td></td>
+  <td></td>
+  <td>SortableCActiveRecord</td>
+</tr>
+<tr class="inherited" id="primaryKey">
+  <td>primaryKey</td>
+  <td>mixed</td>
+  <td>Returns the primary key value.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="safeAttributeNames">
+  <td>safeAttributeNames</td>
+  <td>array</td>
+  <td>Returns the attribute names that are safe to be massively assigned.</td>
+  <td>CModel</td>
+</tr>
+<tr class="inherited" id="scenario">
+  <td>scenario</td>
+  <td>string</td>
+  <td>Returns the scenario that this model is used in.</td>
+  <td>CModel</td>
+</tr>
+<tr class="inherited" id="tableAlias">
+  <td>tableAlias</td>
+  <td>string</td>
+  <td>Returns the table alias to be used by the find methods.</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="tableSchema">
+  <td>tableSchema</td>
+  <td>CDbTableSchema</td>
+  <td>Returns the metadata of the table that this AR belongs to</td>
+  <td>CActiveRecord</td>
+</tr>
+<tr class="inherited" id="validatorList">
+  <td>validatorList</td>
+  <td>CList</td>
+  <td>Returns all the validators declared in the model.</td>
+  <td>CModel</td>
+</tr>
+<tr class="inherited" id="validators">
+  <td>validators</td>
+  <td>array</td>
+  <td>Returns the validators applicable to the current <a href="SortableCActiveRecord.html#scenario">scenario</a>.</td>
+  <td>CModel</td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#__get-detail">__get()</a></td>
+  <td>PHP getter magic method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#__set-detail">__set()</a></td>
+  <td>PHP setter magic method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="__sleep">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#__sleep-detail">__sleep()</a></td>
+  <td>PHP sleep magic method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="addError">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#addError-detail">addError()</a></td>
+  <td>Adds a new error to the specified attribute.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="addErrors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#addErrors-detail">addErrors()</a></td>
+  <td>Adds a list of errors.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="addRelatedRecord">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#addRelatedRecord-detail">addRelatedRecord()</a></td>
+  <td>Do not call this method. This method is used internally by CActiveFinder to populate</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="afterFindInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#afterFindInternal-detail">afterFindInternal()</a></td>
+  <td>Calls <a href="SortableCActiveRecord.html#afterFind">afterFind</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="applyScopes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#applyScopes-detail">applyScopes()</a></td>
+  <td>Applies the query scopes to the given criteria.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attributeLabels">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#attributeLabels-detail">attributeLabels()</a></td>
+  <td>Returns the attribute labels.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="attributeNames">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#attributeNames-detail">attributeNames()</a></td>
+  <td>Returns the list of all attribute names of the model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="beforeFindInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#beforeFindInternal-detail">beforeFindInternal()</a></td>
+  <td>Calls <a href="SortableCActiveRecord.html#beforeFind">beforeFind</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="behaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#behaviors-detail">behaviors()</a></td>
+  <td>Returns a list of behaviors that this model should behave as.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="cache">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#cache-detail">cache()</a></td>
+  <td>Sets the parameters about query caching.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="clearErrors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#clearErrors-detail">clearErrors()</a></td>
+  <td>Removes errors for all attributes or a single attribute.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="count">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#count-detail">count()</a></td>
+  <td>Finds the number of rows satisfying the specified query condition.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="countByAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#countByAttributes-detail">countByAttributes()</a></td>
+  <td>Finds the number of rows that have the specified attribute values.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="countBySql">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#countBySql-detail">countBySql()</a></td>
+  <td>Finds the number of rows using the given SQL statement.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="createValidators">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#createValidators-detail">createValidators()</a></td>
+  <td>Creates validator objects based on the specification in <a href="SortableCActiveRecord.html#rules">rules</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="defaultScope">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#defaultScope-detail">defaultScope()</a></td>
+  <td>Returns the default named scope that should be implicitly applied to all queries for this model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#delete-detail">delete()</a></td>
+  <td>Deletes the row corresponding to this active record.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="deleteAll">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#deleteAll-detail">deleteAll()</a></td>
+  <td>Deletes rows with the specified condition.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="deleteAllByAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#deleteAllByAttributes-detail">deleteAllByAttributes()</a></td>
+  <td>Deletes rows which match the specified attribute values.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="deleteByPk">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#deleteByPk-detail">deleteByPk()</a></td>
+  <td>Deletes rows with the specified primary key.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="equals">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#equals-detail">equals()</a></td>
+  <td>Compares current active record with another one.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="exists">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#exists-detail">exists()</a></td>
+  <td>Checks whether there is row satisfying the specified condition.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="find">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#find-detail">find()</a></td>
+  <td>Finds a single active record with the specified condition.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="findAll">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#findAll-detail">findAll()</a></td>
+  <td>Finds all active records satisfying the specified condition.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="findAllByAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#findAllByAttributes-detail">findAllByAttributes()</a></td>
+  <td>Finds all active records that have the specified attribute values.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="findAllByPk">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#findAllByPk-detail">findAllByPk()</a></td>
+  <td>Finds all active records with the specified primary keys.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="findAllBySql">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#findAllBySql-detail">findAllBySql()</a></td>
+  <td>Finds all active records using the specified SQL statement.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="findByAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#findByAttributes-detail">findByAttributes()</a></td>
+  <td>Finds a single active record that has the specified attribute values.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="findByPk">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#findByPk-detail">findByPk()</a></td>
+  <td>Finds a single active record with the specified primary key.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="findBySql">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#findBySql-detail">findBySql()</a></td>
+  <td>Finds a single active record with the specified SQL statement.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="generateAttributeLabel">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#generateAttributeLabel-detail">generateAttributeLabel()</a></td>
+  <td>Generates a user friendly attribute label.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="getActiveRelation">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getActiveRelation-detail">getActiveRelation()</a></td>
+  <td>Returns the named relation declared for this AR class.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getAttribute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getAttribute-detail">getAttribute()</a></td>
+  <td>Returns the named attribute value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getAttributeLabel">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getAttributeLabel-detail">getAttributeLabel()</a></td>
+  <td>Returns the text label for the specified attribute.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getAttributes-detail">getAttributes()</a></td>
+  <td>Returns all column attribute values.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getCommandBuilder">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getCommandBuilder-detail">getCommandBuilder()</a></td>
+  <td>Returns the command builder used by this AR.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getDbConnection">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getDbConnection-detail">getDbConnection()</a></td>
+  <td>Returns the database connection used by active record.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getDbCriteria">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getDbCriteria-detail">getDbCriteria()</a></td>
+  <td>Returns the query criteria associated with this model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getError">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#getError-detail">getError()</a></td>
+  <td>Returns the first error of the specified attribute.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="getErrors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#getErrors-detail">getErrors()</a></td>
+  <td>Returns the errors for all attribute or a single attribute.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getIsNewRecord">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getIsNewRecord-detail">getIsNewRecord()</a></td>
+  <td>Returns if the current record is new.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getIterator">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#getIterator-detail">getIterator()</a></td>
+  <td>Returns an iterator for traversing the attributes in the model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="getMetaData">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getMetaData-detail">getMetaData()</a></td>
+  <td>Returns the meta-data for this AR</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getOldPrimaryKey">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getOldPrimaryKey-detail">getOldPrimaryKey()</a></td>
+  <td>Returns the old primary key value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getPrimaryKey">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getPrimaryKey-detail">getPrimaryKey()</a></td>
+  <td>Returns the primary key value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getRelated">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getRelated-detail">getRelated()</a></td>
+  <td>Returns the related record(s).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getSafeAttributeNames">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#getSafeAttributeNames-detail">getSafeAttributeNames()</a></td>
+  <td>Returns the attribute names that are safe to be massively assigned.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="getScenario">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#getScenario-detail">getScenario()</a></td>
+  <td>Returns the scenario that this model is used in.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="getTableAlias">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getTableAlias-detail">getTableAlias()</a></td>
+  <td>Returns the table alias to be used by the find methods.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getTableSchema">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#getTableSchema-detail">getTableSchema()</a></td>
+  <td>Returns the metadata of the table that this AR belongs to</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="getValidatorList">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#getValidatorList-detail">getValidatorList()</a></td>
+  <td>Returns all the validators declared in the model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="getValidators">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#getValidators-detail">getValidators()</a></td>
+  <td>Returns the validators applicable to the current <a href="SortableCActiveRecord.html#scenario">scenario</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="hasAttribute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#hasAttribute-detail">hasAttribute()</a></td>
+  <td>Checks whether this AR has the named attribute</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="hasErrors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#hasErrors-detail">hasErrors()</a></td>
+  <td>Returns a value indicating whether there is any validation error.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasRelated">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#hasRelated-detail">hasRelated()</a></td>
+  <td>Returns a value indicating whether the named related object(s) has been loaded.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#init-detail">init()</a></td>
+  <td>Initializes this model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="insert">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#insert-detail">insert()</a></td>
+  <td>Inserts a row into the table based on this active record attributes.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="isAttributeRequired">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#isAttributeRequired-detail">isAttributeRequired()</a></td>
+  <td>Returns a value indicating whether the attribute is required.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="isAttributeSafe">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#isAttributeSafe-detail">isAttributeSafe()</a></td>
+  <td>Returns a value indicating whether the attribute is safe for massive assignments.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="model">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#model-detail">model()</a></td>
+  <td>Returns the static model of the specified AR class.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#offsetExists-detail">offsetExists()</a></td>
+  <td>Returns whether there is an element at the specified offset.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#offsetGet-detail">offsetGet()</a></td>
+  <td>Returns the element at the specified offset.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#offsetSet-detail">offsetSet()</a></td>
+  <td>Sets the element at the specified offset.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#offsetUnset-detail">offsetUnset()</a></td>
+  <td>Unsets the element at the specified offset.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="onAfterConstruct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onAfterConstruct-detail">onAfterConstruct()</a></td>
+  <td>This event is raised after the model instance is created by new operator.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="onAfterDelete">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onAfterDelete-detail">onAfterDelete()</a></td>
+  <td>This event is raised after the record is deleted.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onAfterFind">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onAfterFind-detail">onAfterFind()</a></td>
+  <td>This event is raised after the record is instantiated by a find method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onAfterSave">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onAfterSave-detail">onAfterSave()</a></td>
+  <td>This event is raised after the record is saved.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onAfterValidate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onAfterValidate-detail">onAfterValidate()</a></td>
+  <td>This event is raised after the validation is performed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="onBeforeDelete">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onBeforeDelete-detail">onBeforeDelete()</a></td>
+  <td>This event is raised before the record is deleted.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onBeforeFind">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onBeforeFind-detail">onBeforeFind()</a></td>
+  <td>This event is raised before an AR finder performs a find call.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onBeforeSave">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onBeforeSave-detail">onBeforeSave()</a></td>
+  <td>This event is raised before the record is saved.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onBeforeValidate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onBeforeValidate-detail">onBeforeValidate()</a></td>
+  <td>This event is raised before the validation is performed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="onUnsafeAttribute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onUnsafeAttribute-detail">onUnsafeAttribute()</a></td>
+  <td>This method is invoked when an unsafe attribute is being massively assigned.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="populateRecord">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#populateRecord-detail">populateRecord()</a></td>
+  <td>Creates an active record with the given attributes.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="populateRecords">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#populateRecords-detail">populateRecords()</a></td>
+  <td>Creates a list of active records based on the input data.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="primaryKey">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#primaryKey-detail">primaryKey()</a></td>
+  <td>Returns the primary key of the associated database table.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="refresh">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#refresh-detail">refresh()</a></td>
+  <td>Repopulates this active record with the latest data.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="refreshMetaData">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#refreshMetaData-detail">refreshMetaData()</a></td>
+  <td>Refreshes the meta data for this AR class.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="relations">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#relations-detail">relations()</a></td>
+  <td>This method should be overridden to declare related objects.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="resetScope">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#resetScope-detail">resetScope()</a></td>
+  <td>Resets all scopes and criterias applied including default scope.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="rules">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#rules-detail">rules()</a></td>
+  <td>Returns the validation rules for attributes.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="save">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#save-detail">save()</a></td>
+  <td>Saves the current record.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="saveAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#saveAttributes-detail">saveAttributes()</a></td>
+  <td>Saves a selected list of attributes.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="saveCounters">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#saveCounters-detail">saveCounters()</a></td>
+  <td>Saves one or several counter columns for the current AR object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="scopes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#scopes-detail">scopes()</a></td>
+  <td>Returns the declaration of named scopes.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="setAttribute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#setAttribute-detail">setAttribute()</a></td>
+  <td>Sets the named attribute value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="setAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#setAttributes-detail">setAttributes()</a></td>
+  <td>Sets the attribute values in a massive way.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="setDbCriteria">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#setDbCriteria-detail">setDbCriteria()</a></td>
+  <td>Sets the query criteria for the current model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="setIsNewRecord">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#setIsNewRecord-detail">setIsNewRecord()</a></td>
+  <td>Sets if the record is new.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="setOldPrimaryKey">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#setOldPrimaryKey-detail">setOldPrimaryKey()</a></td>
+  <td>Sets the old primary key value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="setPrimaryKey">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#setPrimaryKey-detail">setPrimaryKey()</a></td>
+  <td>Sets the primary key value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="setScenario">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#setScenario-detail">setScenario()</a></td>
+  <td>Sets the scenario for the model.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="setTableAlias">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#setTableAlias-detail">setTableAlias()</a></td>
+  <td>Sets the table alias to be used in queries.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="tableName">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#tableName-detail">tableName()</a></td>
+  <td>Returns the name of the associated database table.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="together">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#together-detail">together()</a></td>
+  <td>Sets CDbCriteria::together property to be true.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="unsetAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#unsetAttributes-detail">unsetAttributes()</a></td>
+  <td>Unsets the attributes.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="update">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#update-detail">update()</a></td>
+  <td>Updates the row represented by this active record.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="updateAll">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#updateAll-detail">updateAll()</a></td>
+  <td>Updates records with the specified condition.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="updateByPk">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#updateByPk-detail">updateByPk()</a></td>
+  <td>Updates records with the specified primary key(s).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="updateCounters">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#updateCounters-detail">updateCounters()</a></td>
+  <td>Updates one or several counter columns.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="validate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#validate-detail">validate()</a></td>
+  <td>Performs the validation.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="with">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#with-detail">with()</a></td>
+  <td>Specifies which related objects should be eagerly loaded.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="afterConstruct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#afterConstruct-detail">afterConstruct()</a></td>
+  <td>This method is invoked after a model instance is created by new operator.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr id="afterDelete">
+  <td><a href="SortableCActiveRecord.html#afterDelete-detail">afterDelete()</a></td>
+  <td>This method is invoked after deleting a record.</td>
+  <td>SortableCActiveRecord</td>
+</tr>
+<tr class="inherited" id="afterFind">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#afterFind-detail">afterFind()</a></td>
+  <td>This method is invoked after each record is instantiated by a find method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="afterSave">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#afterSave-detail">afterSave()</a></td>
+  <td>This method is invoked after saving a record successfully.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="afterValidate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#afterValidate-detail">afterValidate()</a></td>
+  <td>This method is invoked after validation ends.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="beforeDelete">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#beforeDelete-detail">beforeDelete()</a></td>
+  <td>This method is invoked before deleting a record.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="beforeFind">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#beforeFind-detail">beforeFind()</a></td>
+  <td>This method is invoked before an AR finder executes a find call.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr id="beforeSave">
+  <td><a href="SortableCActiveRecord.html#beforeSave-detail">beforeSave()</a></td>
+  <td>This method is invoked before saving a record (after validation, if any).</td>
+  <td>SortableCActiveRecord</td>
+</tr>
+<tr class="inherited" id="beforeValidate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#beforeValidate-detail">beforeValidate()</a></td>
+  <td>This method is invoked before validation starts.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="instantiate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#instantiate-detail">instantiate()</a></td>
+  <td>Creates an active record instance.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="query">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#query-detail">query()</a></td>
+  <td>Performs the actual DB query and populates the AR objects with the query result.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<div class="summary docEvent">
+<h2>Events</h2>
+
+<p><a href="#" class="toggle">Hide inherited events</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-event" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Event</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="onBeforeSave">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onBeforeSave-detail">onBeforeSave</a></td>
+  <td>This event is raised before the record is saved.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onAfterSave">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onAfterSave-detail">onAfterSave</a></td>
+  <td>This event is raised after the record is saved.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onBeforeDelete">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onBeforeDelete-detail">onBeforeDelete</a></td>
+  <td>This event is raised before the record is deleted.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onAfterDelete">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onAfterDelete-detail">onAfterDelete</a></td>
+  <td>This event is raised after the record is deleted.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onBeforeFind">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onBeforeFind-detail">onBeforeFind</a></td>
+  <td>This event is raised before an AR finder performs a find call.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onAfterFind">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord/#onAfterFind-detail">onAfterFind</a></td>
+  <td>This event is raised after the record is instantiated by a find method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CActiveRecord">CActiveRecord</a></td>
+</tr>
+<tr class="inherited" id="onAfterConstruct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onAfterConstruct-detail">onAfterConstruct</a></td>
+  <td>This event is raised after the model instance is created by new operator.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="onBeforeValidate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onBeforeValidate-detail">onBeforeValidate</a></td>
+  <td>This event is raised before the validation is performed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="onAfterValidate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onAfterValidate-detail">onAfterValidate</a></td>
+  <td>This event is raised after the validation is performed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+<tr class="inherited" id="onUnsafeAttribute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel/#onUnsafeAttribute-detail">onUnsafeAttribute</a></td>
+  <td>This method is invoked when an unsafe attribute is being massively assigned.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CModel">CModel</a></td>
+</tr>
+</table>
+</div>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="orderField-detail">
+orderField<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$orderField</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="afterDelete-detail">
+afterDelete()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>afterDelete</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/laMarciana/yiiSortableModel/blob/master/models/SortableCActiveRecord.php#L69">extensions//models/SortableCActiveRecord.php#L69</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">afterDelete</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;</span><span style="color: #0000BB">$model&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">call_user_func</span><span style="color: #007700">(array(</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">),&nbsp;</span><span style="color: #DD0000">'model'</span><span style="color: #007700">));<br />&nbsp;&nbsp;</span><span style="color: #0000BB">$following_records&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">(array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'order'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'`'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">.</span><span style="color: #DD0000">'`&nbsp;ASC'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'condition'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'`'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">.</span><span style="color: #DD0000">'`&nbsp;&gt;&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">},<br />&nbsp;&nbsp;));<br />&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$following_records&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$record</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$record</span><span style="color: #007700">-&gt;{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">}--;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$record</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">();<br />&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">afterDelete</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;}</span>
+</span>
+</code></div>
+</div>
+
+<p>This method is invoked after deleting a record.
+The default implementation raises the <a href="SortableCActiveRecord.html#onAfterDelete">onAfterDelete</a> event.
+You may override this method to do postprocessing after the record is deleted.
+Make sure you call the parent implementation so that the event is raised properly.
+Update records order field in a manner that their values are still successively increased by one (so, there is no gap caused by the deleted record)</p>
+
+
+<div class="detailHeader" id="beforeSave-detail">
+beforeSave()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>beforeSave</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the saving should be executed. Defaults to true.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/laMarciana/yiiSortableModel/blob/master/models/SortableCActiveRecord.php#L44">extensions//models/SortableCActiveRecord.php#L44</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">beforeSave</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isNewRecord</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">call_user_func</span><span style="color: #007700">(array(</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">),&nbsp;</span><span style="color: #DD0000">'model'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$last_record&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">find</span><span style="color: #007700">(array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'order'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'`'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">.</span><span style="color: #DD0000">'`&nbsp;DESC'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'limit'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$last_record</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">}&nbsp;=&nbsp;</span><span style="color: #0000BB">$last_record</span><span style="color: #007700">-&gt;{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">}&nbsp;+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">}&nbsp;=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">beforeSave</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;}</span>
+</span>
+</code></div>
+</div>
+
+<p>This method is invoked before saving a record (after validation, if any).
+The default implementation raises the <a href="SortableCActiveRecord.html#onBeforeSave">onBeforeSave</a> event.
+You may override this method to do any preparation work for record saving.
+Use <a href="SortableCActiveRecord.html#isNewRecord">isNewRecord</a> to determine whether the saving is
+for inserting or updating record.
+Make sure you call the parent implementation so that the event is raised properly.
+If it's a new record, assign automatically it's order at the last position.</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

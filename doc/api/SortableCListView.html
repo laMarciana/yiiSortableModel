@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>SortableCListView</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+<a href="http://www.yiiframework.com/extension/yiisortablemodel/">Yii Sortable Model</a> Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>SortableCListView</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#Yii Sortable Model">Yii Sortable Model</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class SortableCListView &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CListView">CListView</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>1.0</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td><a class="sourceLink" href="https://github.com/laMarciana/yiiSortableModel/blob/master/widgets/SortableCListView.php">extensions//widgets/SortableCListView.php</a></td>
+</tr>
+</table>
+
+<div id="classDescription">
+CListView widget extended to list records sorted.</div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="actionPrefix">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#actionPrefix-detail">actionPrefix</a></td>
+  <td>string</td>
+  <td>the prefix to the IDs of the <a href="SortableCListView.html#actions">actions</a>.</td>
+  <td>CWidget</td>
+</tr>
+<tr class="inherited" id="afterAjaxUpdate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#afterAjaxUpdate-detail">afterAjaxUpdate</a></td>
+  <td>string</td>
+  <td>a javascript function that will be invoked after a successful AJAX response is received.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="ajaxUpdate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#ajaxUpdate-detail">ajaxUpdate</a></td>
+  <td>mixed</td>
+  <td>the ID of the container whose content may be updated with an AJAX response.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="ajaxUrl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#ajaxUrl-detail">ajaxUrl</a></td>
+  <td>mixed</td>
+  <td>the URL for the AJAX requests should be sent to.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="ajaxVar">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#ajaxVar-detail">ajaxVar</a></td>
+  <td>string</td>
+  <td>the name of the GET variable that indicates the request is an AJAX request triggered
+by this widget.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="baseScriptUrl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#baseScriptUrl-detail">baseScriptUrl</a></td>
+  <td>string</td>
+  <td>the base script URL for all list view resources (e.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="beforeAjaxUpdate">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#beforeAjaxUpdate-detail">beforeAjaxUpdate</a></td>
+  <td>string</td>
+  <td>a javascript function that will be invoked before an AJAX update occurs.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="controller">
+  <td>controller</td>
+  <td>CController</td>
+  <td>Returns the controller that this widget belongs to.</td>
+  <td>CWidget</td>
+</tr>
+<tr class="inherited" id="cssFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#cssFile-detail">cssFile</a></td>
+  <td>string</td>
+  <td>the URL of the CSS file used by this list view.</td>
+  <td>CListView</td>
+</tr>
+<tr id="dataProvider">
+  <td><a href="SortableCListView.html#dataProvider-detail">dataProvider</a></td>
+  <td>CActiveDataProvider</td>
+  <td>the data provider for the view.</td>
+  <td>SortableCListView</td>
+</tr>
+<tr id="descSort">
+  <td><a href="SortableCListView.html#descSort-detail">descSort</a></td>
+  <td>boolean</td>
+  <td>whether to show records in a descendant order.</td>
+  <td>SortableCListView</td>
+</tr>
+<tr class="inherited" id="emptyText">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#emptyText-detail">emptyText</a></td>
+  <td>string</td>
+  <td>the message to be displayed when <a href="SortableCListView.html#dataProvider">dataProvider</a> does not have any data.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="enablePagination">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#enablePagination-detail">enablePagination</a></td>
+  <td>boolean</td>
+  <td>whether to enable pagination.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="enableSorting">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#enableSorting-detail">enableSorting</a></td>
+  <td>boolean</td>
+  <td>whether to enable sorting.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="htmlOptions">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#htmlOptions-detail">htmlOptions</a></td>
+  <td>array</td>
+  <td>the HTML options for the view container tag.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="id">
+  <td>id</td>
+  <td>string</td>
+  <td>Returns the ID of the widget or generates a new one if requested.</td>
+  <td>CWidget</td>
+</tr>
+<tr class="inherited" id="itemView">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#itemView-detail">itemView</a></td>
+  <td>string</td>
+  <td>the view used for rendering each data item.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="itemsCssClass">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#itemsCssClass-detail">itemsCssClass</a></td>
+  <td>string</td>
+  <td>the CSS class name for the container of all data item display.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="itemsTagName">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#itemsTagName-detail">itemsTagName</a></td>
+  <td>string</td>
+  <td>the HTML tag name for the container of all data item display.</td>
+  <td>CListView</td>
+</tr>
+<tr id="listSorted">
+  <td><a href="SortableCListView.html#listSorted-detail">listSorted</a></td>
+  <td>boolean</td>
+  <td>whether to list items sorted, which is the essence of this widget.</td>
+  <td>SortableCListView</td>
+</tr>
+<tr class="inherited" id="loadingCssClass">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#loadingCssClass-detail">loadingCssClass</a></td>
+  <td>string</td>
+  <td>the CSS class name that will be assigned to the widget container element
+when the widget is updating its content via AJAX.</td>
+  <td>CListView</td>
+</tr>
+<tr id="orderField">
+  <td><a href="SortableCListView.html#orderField-detail">orderField</a></td>
+  <td>string</td>
+  <td>the field name in the database table which stores the order for the record.</td>
+  <td>SortableCListView</td>
+</tr>
+<tr class="inherited" id="owner">
+  <td>owner</td>
+  <td>CBaseController</td>
+  <td>Returns the owner/creator of this widget.</td>
+  <td>CWidget</td>
+</tr>
+<tr class="inherited" id="pager">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#pager-detail">pager</a></td>
+  <td>array</td>
+  <td>the configuration for the pager.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="pagerCssClass">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#pagerCssClass-detail">pagerCssClass</a></td>
+  <td>string</td>
+  <td>the CSS class name for the pager container.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="separator">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#separator-detail">separator</a></td>
+  <td>string</td>
+  <td>the HTML code to be displayed between any two consecutive items.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="skin">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#skin-detail">skin</a></td>
+  <td>mixed</td>
+  <td>the name of the skin to be used by this widget.</td>
+  <td>CWidget</td>
+</tr>
+<tr class="inherited" id="sortableAttributes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#sortableAttributes-detail">sortableAttributes</a></td>
+  <td>array</td>
+  <td>list of sortable attribute names.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="sorterCssClass">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#sorterCssClass-detail">sorterCssClass</a></td>
+  <td>string</td>
+  <td>the CSS class name for the sorter container.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="sorterFooter">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#sorterFooter-detail">sorterFooter</a></td>
+  <td>string</td>
+  <td>the text shown after sort links.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="sorterHeader">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#sorterHeader-detail">sorterHeader</a></td>
+  <td>string</td>
+  <td>the text shown before sort links.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="summaryCssClass">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#summaryCssClass-detail">summaryCssClass</a></td>
+  <td>string</td>
+  <td>the CSS class name for the summary text container.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="summaryText">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#summaryText-detail">summaryText</a></td>
+  <td>string</td>
+  <td>the summary text template for the view.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="tagName">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#tagName-detail">tagName</a></td>
+  <td>string</td>
+  <td>the tag name for the view container.</td>
+  <td>CBaseListView</td>
+</tr>
+<tr class="inherited" id="template">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#template-detail">template</a></td>
+  <td>string</td>
+  <td>the template to be used to control the layout of various components in the list view.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="updateSelector">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#updateSelector-detail">updateSelector</a></td>
+  <td>string</td>
+  <td>the jQuery selector of the HTML elements that may trigger AJAX updates when they are clicked.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="viewData">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#viewData-detail">viewData</a></td>
+  <td>array</td>
+  <td>additional data to be passed to <a href="SortableCListView.html#itemView">itemView</a> when rendering each data item.</td>
+  <td>CListView</td>
+</tr>
+<tr class="inherited" id="viewPath">
+  <td>viewPath</td>
+  <td>string</td>
+  <td>Returns the directory containing the view files for this widget.</td>
+  <td>CWidget</td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="actions">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#actions-detail">actions()</a></td>
+  <td>Returns a list of actions that are used by this widget.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="beginCache">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginCache-detail">beginCache()</a></td>
+  <td>Begins fragment caching.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginClip-detail">beginClip()</a></td>
+  <td>Begins recording a clip.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginContent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginContent-detail">beginContent()</a></td>
+  <td>Begins the rendering of content that is to be decorated by the specified view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginWidget-detail">beginWidget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="createWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#createWidget-detail">createWidget()</a></td>
+  <td>Creates a widget and initializes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="endCache">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endCache-detail">endCache()</a></td>
+  <td>Ends fragment caching.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endClip-detail">endClip()</a></td>
+  <td>Ends recording a clip.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endContent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endContent-detail">endContent()</a></td>
+  <td>Ends the rendering of content.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endWidget-detail">endWidget()</a></td>
+  <td>Ends the execution of the named widget.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getController">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#getController-detail">getController()</a></td>
+  <td>Returns the controller that this widget belongs to.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#getId-detail">getId()</a></td>
+  <td>Returns the ID of the widget or generates a new one if requested.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="getOwner">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#getOwner-detail">getOwner()</a></td>
+  <td>Returns the owner/creator of this widget.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="getViewFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#getViewFile-detail">getViewFile()</a></td>
+  <td>Looks for the view script file according to the view name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="getViewPath">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#getViewPath-detail">getViewPath()</a></td>
+  <td>Returns the directory containing the view files for this widget.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr id="init">
+  <td><a href="SortableCListView.html#init-detail">init()</a></td>
+  <td>Initializes the list view.</td>
+  <td>SortableCListView</td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="registerClientScript">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#registerClientScript-detail">registerClientScript()</a></td>
+  <td>Registers necessary client scripts.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView">CListView</a></td>
+</tr>
+<tr class="inherited" id="render">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#render-detail">render()</a></td>
+  <td>Renders a view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="renderContent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#renderContent-detail">renderContent()</a></td>
+  <td>Renders the main content of the view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a></td>
+</tr>
+<tr class="inherited" id="renderEmptyText">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#renderEmptyText-detail">renderEmptyText()</a></td>
+  <td>Renders the empty message when there is no data.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a></td>
+</tr>
+<tr class="inherited" id="renderFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#renderFile-detail">renderFile()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#renderInternal-detail">renderInternal()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderItems">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#renderItems-detail">renderItems()</a></td>
+  <td>Renders the data item list.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView">CListView</a></td>
+</tr>
+<tr class="inherited" id="renderKeys">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#renderKeys-detail">renderKeys()</a></td>
+  <td>Renders the key values of the data in a hidden tag.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a></td>
+</tr>
+<tr class="inherited" id="renderPager">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#renderPager-detail">renderPager()</a></td>
+  <td>Renders the pager.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a></td>
+</tr>
+<tr class="inherited" id="renderSorter">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView/#renderSorter-detail">renderSorter()</a></td>
+  <td>Renders the sorter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CListView">CListView</a></td>
+</tr>
+<tr class="inherited" id="renderSummary">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#renderSummary-detail">renderSummary()</a></td>
+  <td>Renders the summary text.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a></td>
+</tr>
+<tr class="inherited" id="run">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#run-detail">run()</a></td>
+  <td>Renders the view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a></td>
+</tr>
+<tr class="inherited" id="setId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget/#setId-detail">setId()</a></td>
+  <td>Sets the ID of the widget.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWidget">CWidget</a></td>
+</tr>
+<tr class="inherited" id="widget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#widget-detail">widget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="renderSection">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView/#renderSection-detail">renderSection()</a></td>
+  <td>Renders a section.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseListView">CBaseListView</a></td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="dataProvider-detail">
+dataProvider<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public CActiveDataProvider <b>$dataProvider</b>;</div>
+
+<p>the data provider for the view.</p>
+
+
+<div class="detailHeader" id="descSort-detail">
+descSort<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$descSort</b>;</div>
+
+<p>whether to show records in a descendant order. Defaults to false</p>
+
+
+<div class="detailHeader" id="listSorted-detail">
+listSorted<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$listSorted</b>;</div>
+
+<p>whether to list items sorted, which is the essence of this widget. If it's set to true items are listed ordered by the field defined in $orderField. It it's set to false the widget defaults to a normal CListView and the rest of this extension widget properties are ignored. Defaults to true</p>
+
+
+<div class="detailHeader" id="orderField-detail">
+orderField<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$orderField</b>;</div>
+
+<p>the field name in the database table which stores the order for the record. This should be a positive integer field. Defaults to 'order'</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="init-detail">
+init()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>init</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/laMarciana/yiiSortableModel/blob/master/widgets/SortableCListView.php#L54">extensions//widgets/SortableCListView.php#L54</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">listSorted&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*To&nbsp;use&nbsp;this&nbsp;widget,&nbsp;data&nbsp;provider&nbsp;must&nbsp;be&nbsp;an&nbsp;instance&nbsp;of&nbsp;CActiveDataProvider*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dataProvider&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">CActiveDataProvider</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CException</span><span style="color: #007700">(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'zii'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Data&nbsp;provider&nbsp;must&nbsp;be&nbsp;an&nbsp;instance&nbsp;of&nbsp;CActiveDataProvider'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">descSort&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sort_direction&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'ASC'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sort_direction&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'DESC'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dataProvider</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setSort</span><span style="color: #007700">(array(</span><span style="color: #DD0000">'defaultOrder'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'`'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">orderField</span><span style="color: #007700">.</span><span style="color: #DD0000">'`'</span><span style="color: #007700">.</span><span style="color: #0000BB">$sort_direction</span><span style="color: #007700">));<br />&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;}</span>
+</span>
+</code></div>
+</div>
+
+<p>Initializes the list view.
+This method will initialize required property values and instantiate columns objects.</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>
