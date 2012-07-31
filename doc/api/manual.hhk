@@ -34,6 +34,24 @@
 			</object>
 																																																																																																																																																																																																																																																																																																																																																							</ul>
 	<li><object type="text/sitemap">
+		<param name="Name" value="SortableCActiveRecordBehavior">
+		<param name="Local" value="SortableCActiveRecordBehavior.html">
+		</object>
+	<ul>
+								<li><object type="text/sitemap">
+			<param name="Name" value="orderField">
+			<param name="Local" value="SortableCActiveRecordBehavior.html#orderField">
+			</object>
+																														<li><object type="text/sitemap">
+			<param name="Name" value="afterDelete()">
+			<param name="Local" value="SortableCActiveRecordBehavior.html#afterDelete">
+			</object>
+																																					<li><object type="text/sitemap">
+			<param name="Name" value="beforeSave()">
+			<param name="Local" value="SortableCActiveRecordBehavior.html#beforeSave">
+			</object>
+																																																																			</ul>
+	<li><object type="text/sitemap">
 		<param name="Name" value="SortableCGridView">
 		<param name="Local" value="SortableCGridView.html">
 		</object>

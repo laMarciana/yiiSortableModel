@@ -1,3 +1,8 @@
+2012-07-31  Marc Busqué  <marc@lamarciana.com>
+
+* Version 1.1. Add SortableCActiveBehavior, to allow working with custom
+models and attach them sortable functionality.
+
 2012-07-04  Marc Busqué  <marc@lamarciana.com>
 
 * Initial release

@@ -30,6 +30,10 @@
 			<param name="Local" value="SortableCActiveRecord.html">
 			</object>
 			<li><object type="text/sitemap">
+			<param name="Name" value="SortableCActiveRecordBehavior">
+			<param name="Local" value="SortableCActiveRecordBehavior.html">
+			</object>
+			<li><object type="text/sitemap">
 			<param name="Name" value="SortableCGridView">
 			<param name="Local" value="SortableCGridView.html">
 			</object>
