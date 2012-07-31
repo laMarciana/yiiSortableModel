@@ -27,7 +27,8 @@
  */
 class SortableCActiveRecord extends CActiveRecord
 {
-   /* @var string the field name in the database table which stores the order for the record. This should be a positive integer field. Defaults to 'order'
+   /**
+    * @var string the field name in the database table which stores the order for the record. This should be a positive integer field. Defaults to 'order'
     */
    public $orderField = 'order';
 
