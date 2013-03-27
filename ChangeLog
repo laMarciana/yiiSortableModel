@@ -1,5 +1,9 @@
 2012-07-31  Marc Busqué  <marc@lamarciana.com>
 
+* Version 1.1.1 CGridView works with Csrf Validation
+
+2012-07-31  Marc Busqué  <marc@lamarciana.com>
+
 * Version 1.1. Add SortableCActiveBehavior, to allow working with custom
 models and attach them sortable functionality.
 
