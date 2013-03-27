@@ -163,6 +163,7 @@ class SortableCGridView extends CGridView
             }
             data["model"] = '.Cjavascript::encode($this->dataProvider->modelClass).';
             data["order_field"] = '.Cjavascript::encode($this->orderField).';
+            data["YII_CSRF_TOKEN"] = '.Cjavascript::encode(Yii::app()->getRequest()->getCsrfToken()).';
             ui.item.removeAttr("data-prev-index");
             '.CHtml::ajax(array(
                'type' => 'POST',
