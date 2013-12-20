@@ -64,7 +64,7 @@ class SortableCListView extends CListView
          } else {
             $sort_direction = 'DESC';
          }
-         $this->dataProvider->setSort(array('defaultOrder' => '`'.$this->orderField.'`'.$sort_direction));
+         $this->dataProvider->setSort(array('defaultOrder' => '`t`.`'.$this->orderField.'`'.$sort_direction));
       }
 
       parent::init();
