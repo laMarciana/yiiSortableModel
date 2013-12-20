@@ -94,7 +94,7 @@ class SortableCGridView extends CGridView
          } else {
             $sort_direction = 'DESC';
          }
-         $this->dataProvider->setSort(array('defaultOrder' => '`'.$this->orderField.'`'.$sort_direction));
+         $this->dataProvider->setSort(array('defaultOrder' => $this->dataProvider->model->tableAlias.'.'.$this->orderField.' '.$sort_direction));
       }
 
       parent::init();
