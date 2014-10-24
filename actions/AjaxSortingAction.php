@@ -44,7 +44,7 @@ class AjaxSortingAction extends CAction
             {
                $entry = $model->findByAttributes(array($order_field => $i));
                $entry->{$order_field} = $entry->{$order_field} - 1;
-               $entry->update();
+               $entry->update([$order_field]);
             }
          }
          elseif ($prev > $new)
@@ -53,12 +53,12 @@ class AjaxSortingAction extends CAction
             {
                $entry = $model->findByAttributes(array($order_field => $i));
                $entry->{$order_field} = $entry->{$order_field} + 1;
-               $entry->update();
+               $entry->update([$order_field]);
             }
          }
          /*dragged entry order is changed at last, to not interfere during the changing orders loop*/
          $dragged_entry->{$order_field} = $new;
-         $dragged_entry->update();
+         $dragged_entry->update([$order_field]);
       }
    }
 }
